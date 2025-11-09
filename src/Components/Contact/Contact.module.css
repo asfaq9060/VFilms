@@ -1,0 +1,159 @@
+.contact {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.left-contact {
+  flex: 1;
+  width: 45%;
+  font-family: "Instrument Sans", sans-serif;
+  text-align: start;
+  padding: 50px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  position: relative;
+}
+/* .left-contact img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  height: auto;
+
+
+} */
+.left-contact p {
+  width: 85%;
+  padding-left: 40px;
+}
+
+.right-contact {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #252729;
+  gap: 2rem;
+}
+.right-contact h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Halant", serif;
+}
+.right-contact h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.contactForm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 1rem;
+}
+.contactForm input,
+.contactForm textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.contactForm button {
+  width: 125px;
+  padding: 12px 0;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #f15d2b;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.contactdetails {
+  margin-top: 60px;
+  width: 50%;
+  display: flex;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  color: #f15d2b;
+}
+.contact-divider {
+  width: 1.8px;
+  background-color: #f15d2b;
+  border: none;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .left-contact {
+    padding: 20px;
+    width: 50%;
+  }
+  .contactForm{
+    width: 80%;
+  }
+  .contactdetails{
+    flex-direction: column;
+  }
+}
+@media (max-width: 720px) {
+  .contact {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .left-contact {
+    padding: 20px 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .left-contact br {
+    display: none;
+  }
+  .right-contact {
+    flex: 0.7;
+    max-width: 90%;
+    margin-top: 10px;
+    gap: 1.4rem;
+  }
+  .right-contact h2 {
+    font-size: 1.6rem;
+  }
+  .right-contact h3 {
+    font-size: 0.8rem;
+  }
+  .contactForm {
+    width: 100%;
+    gap: 0.7rem;
+  }
+  .contactForm button {
+    width: 50%;
+    border-radius: 0;
+  }
+  .contactdetails {
+    width: 100%;
+    flex-direction: column;
+    font-size: 0.6rem;
+    margin: 0 auto;
+  }
+  .contact-divider {
+    display: none;
+  }
+}
+
+
+.statusMessage{
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+  display: none;
+}
+

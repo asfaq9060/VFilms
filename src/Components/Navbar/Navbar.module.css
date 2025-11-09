@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.navbar-container {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 18px;
+  color: #000000;
+  position: relative;
+  background: rgba(255, 251, 251, 0.45);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.nav-logo {
+  padding: 20px 30px;
+}
+.nav-logo img {
+  width: 134px;
+  height: 52px;
+}
+
+
+.nav-items {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.nav-items a{
+  text-decoration: none;
+}
+.nav-services {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-right: 20px;
+  font-family: "Instrument Sans", sans-serif;
+  align-items: center;
+}
+.nav-list {
+  padding: 20px 0;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+.nav-list li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+  font-weight: 400;
+}
+
+.nav-btn {
+  height: 46px;
+  width: 139px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  background-color: #f15d2b;
+  font-family: "Instrument Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-cross button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 890px) {
+  .navbar-container {
+    padding: 20px 10px;
+    font-size: 16px;
+  }
+  .nav-logo{
+    padding: 10px 10px;
+  }
+  .nav-logo img {
+    width: 114px;
+    height: 42px;
+  }
+  .nav-services {
+    padding-right: 10px;
+  }
+  .nav-btn {
+    width: 119px;
+    font-size: 14px;
+  background-color: #f15c2be6;
+
+  }
+  .nav-items{
+    padding: 0;
+  }
+}
+
+@media (max-width: 720px){
+  .nav-services{
+    position: absolute;
+    top: 80%;
+    right: 20px;
+    left: 20px;
+    width: 90%;
+    display: flex;
+    padding: 10px 0;
+    gap:0;
+    flex-direction: column;
+  }
+  .nav-logo{
+    margin-left: 10px;
+  }
+  .nav-list{
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #e17a685d;
+    text-align: center;
+    padding: 0;
+
+  }
+  .nav-list li{
+    border: 1px solid gray;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .nav-btn {
+    width: 100%;
+    border-radius: 0;
+  }
+  .nav-cross{
+    margin-right: 20px;
+  }
+}
